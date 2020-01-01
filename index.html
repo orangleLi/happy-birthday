@@ -168,11 +168,17 @@
 				transform: translateY(0);
 			}
 		}
-		.main1{
+		.main5{
 		    animation: move 2s 0s infinite; 
 		}
-		.main2{
+		.main6{
 		    animation: move 2s .3s infinite; 
+		}
+		.main1{
+		    animation: move 2s .5s infinite; 
+		}
+		.main2{
+		    animation: move 2s .2s infinite; 
 		}
 		.main3{
 		    animation: move 2s .4s infinite; 
@@ -277,7 +283,7 @@
 		    z-index: 2002;
 		    z-index: 2002;
 		    display: none;
-		    transform: scale(1.5);
+		    transform: scale(2);
 		}
 	</style>
 </head>
@@ -303,10 +309,12 @@
 		</div>
 		<img src="./1.jpg">
 		<div class="title">
-			<p style="font-size: 50px;">吴博：</p>
-			<p style="margin-top: 160px;margin-left: 30px;font-size: 36px;">  来自珊珊小仙女的祝福</p>
+			<!-- <p style="font-size: 50px;">吴博：</p> -->
+			<p>  来自珊珊小仙女的祝福：</p>
 		</div>
 		<div class="bg">
+			<div class="main main5">吴</div>
+			<div class="main main6">博</div>
 			<div class="main main1">生</div>
 			<div class="main main2">日</div>
 			<div class="main main3">快</div>
@@ -523,7 +531,7 @@
 		setTimeout(function() {
 			// document.getElementsByClassName('end')[0].style.opacity = 1;
 			// document.getElementsByClassName('end')[0].style.transform = 'translate(-50%, -50%) scale(2)';
-			bir.playbackRate = 2; // 倍速播放
+			// bir.playbackRate = 2; // 倍速播放
 			bir.play()
 			// num
 			document.getElementsByClassName('num')[0].style.opacity = 0;
