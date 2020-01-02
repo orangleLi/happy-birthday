@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-    <!-- <meta name ="viewport" content ="initial-scale=1, maximum-scale=3, minimum-scale=1, user-scalable=no"> -->
+    <meta name ="viewport" content ="initial-scale=1, maximum-scale=3, minimum-scale=1, user-scalable=no">
 
 	<title>birthday</title>
 
@@ -18,8 +18,8 @@
             /*background:radial-gradient(ellipse at center,#34679a 0%, #214163 50%, #0d1926 100%);/*径向渐变   椭圆*/*/
         }
         .star > div{
-            width:70px;/*宽度 px像素  cm*/
-            height:70px;/*高度*/
+            width:20px;/*宽度 px像素  cm*/
+            height:20px;/*高度*/
             border:1px #fff solid;/*边框 宽度 风格 颜色*/
             border-radius:50%;/*圆角*/
             position:absolute;
@@ -39,30 +39,30 @@
             transform:rotateX(70deg) rotateY(60deg);
         }
         .star > div:first-of-type:after{
-            width:15px;
-            height:15px;
-            content:"";
-            background:#fff;
-            position:absolute;
-            top:50%;
-            left:50%;
-            margin-top:-20px;
-            margin-left:-20px;
-            transform:rotateX(80deg);
-            border-radius:50%;
-            animation:nucleus 2s infinite linear;
+            width: 3px;
+		    height: 3px;
+		    content: "";
+		    background: #fff;
+		    position: absolute;
+		    top: 50%;
+		    left: 50%;
+		    margin-top: -3px;
+		    margin-left: -3px;
+		    transform: rotateX(80deg);
+		    border-radius: 50%;
+		    animation: nucleus 2s infinite linear;
         }
         .star > div > div{
-            width:70px;
-            height:70px;
+            width:10px;
+            height:10px;
             position:relative;
             transform-style:preserve-3d;
             animation:trail 1s infinite linear; /*自定义动画  动画名称 时间 播放次数 速度*/
         }
         .star > div > div:after{
             content:"";
-            width:5px;
-            height:5px;
+            width: 2px;
+    		height: 2px;
             background:#fff;
             position:absolute;
             top:-5px;
@@ -118,10 +118,10 @@
 		}
 		.title{
 			position: absolute;
-			top: 10%;
+			top: 13%;
 			left: 5%;
 			color: #fff;
-			font-size: 42px;
+			font-size: 16px;
 		}
 		.bg{
 			text-align: center;
@@ -130,15 +130,15 @@
 		    top: 50%;
 		    transform: translate(-50%, -50%);
 		    color: #fff;
-		    font-size: 40px;
-		    width: 900px;
+		    font-size: 16px;
+		    width: 100%;
 		}
 		.star{
 			position: absolute;
 			left: 30%;
 			top: 35%;
-			width: 70px;
-			height: 70px;
+			width: 30px;
+			height: 30px;
 		}
 		.star2{
 			left: 90%;
@@ -148,9 +148,9 @@
 			top: 70%;
 		}
 		.main{
-			width: 140px;
-		    height: 140px;
-		    line-height: 140px;
+			width: 55px;
+		    height: 55px;
+		    line-height: 55px;
 		    text-align: center;
 		    background-image: url(./bg.jpg);
 		    background-size: 100% 100%;
@@ -191,27 +191,22 @@
 			left: 50%;
 			transform: translateX(-50%);
 			bottom: 20%;
-			font-size: 46px;
+			font-size: 16px;
 			color: #fff;
-			/*box-shadow:-2px 10px 19px red;*/
-			/*box-shadow: inset 0 0 1.5rem rgba(150, 0, 0, 0.75);*/
 		    animation: flicker 2s infinite;
 		    border-radius: 50%;
-		    width: 150px;
-    		height: 150px;
-    		line-height: 150px;
+		    width: 60px;
+    		height: 60px;
+    		line-height: 60px;
     		text-align: center;
 		}
 		@keyframes flicker {			
 
 			0%, 100% {
-			    box-shadow: 0 0 1rem #fefa01, inset -0.25rem 0 0 0.5rem rgba(14, 10, 10, 0.1);
+			    box-shadow: 0 0 10px #fefa01, inset -3px 0 0 5px rgba(14, 10, 10, 0.1);
 			}
-			/*30%, 70% {
-			    box-shadow: -1rem 0 8rem 1rem #fefa01, inset -0.25rem 0 0 0.5rem rgba(14, 10, 10, 0.1);
-			}*/
 			50% {
-			    box-shadow: -1rem 0 8rem 1rem rgba(254, 250, 1, 0.8), inset -0.25rem 0 0 0.5rem rgba(14, 10, 10, 0.1);
+			    box-shadow: -10px 0 80px 10px rgba(254, 250, 1, 0.8), inset -3px 0 0 5px rgba(14, 10, 10, 0.1);
 			}
 		}
 		@keyframes slide{
@@ -223,6 +218,7 @@
 			position: relative;
 			z-index: 2;
 			transition: transform 3s;
+			display: none;
 		}
 		#page2{
 			position: relative;
@@ -231,7 +227,7 @@
 			top: 0;
 			width: 100%;
 			height: 100%;
-			display: none;
+			/*display: none;*/
 		}
 		.bg-img-2{
 			width: 100%;
@@ -239,41 +235,33 @@
 		}
 
 		.music{
-			width: 700px;
+			width: 250px;
 			top: 42%;
 		}
 		.music-item{
-			padding: 30px;
+			width: 70px;
+			height: 70px;
+			line-height: 70px;
 		}
 		.num{
 			position: absolute;
 			left: 20%;
     		top: 15%;
 			color: #fff;
-			font-size: 40px;
-			max-width: 540px;
-			line-height: 50px;
+			font-size: 14px;
+			max-width: 200px;
+			line-height: 18px;
 		}
 		.qiqiu{
-			width: 60px;
-    		height: 60px;
-		}
-		.end{
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			transition: transform 2s;
-			font-size: 38px;
-    		color: #fff;
-    		opacity: 0;
+			width: 30px;
+    		height: 30px;
 		}
 		.stop{
 			position: absolute;
-			bottom: 15%;
+			bottom: 11%;
 			left: 50%;
 			transform: translateX(-50%);
-			font-size: 42px;
+			font-size: 16px;
     		color: #fff;
 		}
 		#cake-box{    
@@ -281,9 +269,74 @@
 		    top: 20%;
 		    left: 35%;
 		    z-index: 2002;
-		    z-index: 2002;
 		    display: none;
 		    transform: scale(2);
+		}
+
+		.drop{
+			position: absolute;
+			bottom: 0;
+			left: 20%;
+			font-size: 12px;
+			width: 65px;
+    		height: 65px;
+			line-height: 65px;
+			border-radius: 50%;
+			background-color: transparent;
+			color: #235982;
+			text-align: center;
+			background-image: url('./star1.png');
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			opacity: 0;
+			box-shadow: inset 1px 1px 10px 1px #235982;
+		}
+		.drop span{
+			display: block;
+		    transform: translate(20px, 3px) scale(1.3);
+		    font-weight: bold;
+		    position: absolute;
+		    z-index: 2003;
+		    height: 65px;
+		}
+		@keyframes drop0{
+			5%{
+				opacity: 1;
+			}
+			95%{
+				opacity: 0;
+			}
+			100%{
+				opacity: 0;
+				transform: translateY(-900px) rotate(-9deg);
+				box-shadow: inset 1px 1px 6px 1px #235982;
+			}
+		}
+		@keyframes drop1{
+			5%{
+				opacity: 1;
+			}
+			95%{
+				opacity: 0;
+			}
+			100%{
+				opacity: 0;
+				transform: translateY(-800px) rotate(9deg);
+				box-shadow: inset 1px 1px 6px 1px #235982;
+			}
+		}
+		@keyframes drop2{
+			5%{
+				opacity: 1;
+			}
+			95%{
+				opacity: 0;
+			}
+			100%{
+				opacity: 0;
+				transform: translateY(-800px) rotate(15deg);
+				box-shadow: inset 1px 1px 6px 1px #235982;
+			}
 		}
 	</style>
 </head>
@@ -309,7 +362,6 @@
 		</div>
 		<img src="./1.jpg">
 		<div class="title">
-			<!-- <p style="font-size: 50px;">吴博：</p> -->
 			<p>  来自珊珊小仙女的祝福：</p>
 		</div>
 		<div class="bg">
@@ -336,10 +388,9 @@
 			<div class="main music-item" onclick="six()">6</div>
 			<div class="main music-item" onclick="seven()">7</div>
 			<div class="main music-item">8</div>
-			<div class="main music-item">9</div>
+			<div class="main music-item" onclick="drop()">9</div>
 		</div>
-		<!-- <div class="end">生日快乐</div> -->
-		<div class="stop" onclick="stop()">STOP</div>
+		<div class="stop" id="stopPlay" onclick="stop()">STOP</div>
 		<div class="cake" id="cake-box">
 			<div class="mask"></div>
 			<div class="velas">
@@ -504,6 +555,12 @@
 			<div style="text-align:center;clear:both">
 				</div>
 		</div>
+		<div class="drop"></div>
+		<div class="drop"></div>
+		<div class="drop"></div>
+		<div class="drop"></div>
+		<div class="drop"></div>
+		<div class="drop"></div>
 </body>
 <script type="text/javascript">
 	document.getElementById('btn').addEventListener('click', function() {
@@ -529,18 +586,36 @@
 	function seven() {
 		audio7.play()
 		setTimeout(function() {
-			// document.getElementsByClassName('end')[0].style.opacity = 1;
-			// document.getElementsByClassName('end')[0].style.transform = 'translate(-50%, -50%) scale(2)';
 			// bir.playbackRate = 2; // 倍速播放
 			bir.play()
-			// num
 			document.getElementsByClassName('num')[0].style.opacity = 0;
 			document.getElementsByClassName('music')[0].style.opacity = 0;
 			document.getElementById('cake-box').style.display = 'block';
 		}, 100)
 	}
 	function stop() {
-		bir.pause()
+		const str = document.getElementById('stopPlay').innerHTML;
+		if (str === 'Continue') {
+			bir.play()
+			document.getElementById('stopPlay').innerHTML = 'STOP'
+		} else {
+			bir.pause();
+			document.getElementById('stopPlay').innerHTML = 'Continue'
+		}
+	}
+	let arr = ['暴富', '开心', '变帅', '有钱', '脱单', '顺利', '平安', '健康']
+	function drop() {
+		dropAni()
+		setInterval(dropAni, 5000)
+	}
+	function dropAni() {
+		let dropArr = document.getElementsByClassName('drop');
+		for (let i = 0; i < dropArr.length; i++) {
+			let index = parseInt(Math.random()*arr.length,10);
+			dropArr[i].innerHTML = `<span>${arr[index]}</span>`;
+			dropArr[i].style.left = Math.random() * 300 + 'px';
+			dropArr[i].style.animation = `drop${i%3} ${Math.floor(Math.random()*(7-5+1)+5)}s ${Math.random() * 3}s infinite`
+		}
 	}
 </script>
   <script src='js/jquery.js'></script>
