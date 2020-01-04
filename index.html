@@ -364,12 +364,12 @@
 			<p>  来自珊珊的祝福：</p>
 		</div>
 		<div class="bg">
-			<div class="main main5">吴</div>
-			<div class="main main6">博</div>
-			<div class="main main1">生</div>
-			<div class="main main2">日</div>
-			<div class="main main3">快</div>
-			<div class="main main4">乐</div>
+			<div class="main main5 s-h">吴</div>
+			<div class="main main6 s-h">博</div>
+			<div class="main main1 s-h">生</div>
+			<div class="main main2 s-h">日</div>
+			<div class="main main3 s-h">快</div>
+			<div class="main main4 s-h">乐</div>
 		</div>
 		<div class="up-slide" id="btn">
 			<span>点我</span>
@@ -562,6 +562,13 @@
 		<div class="drop"></div>
 </body>
 <script type="text/javascript">
+	let mainArr = document.getElementsByClassName('s-h');
+	let height = mainArr[0].offsetWidth;
+	for (let i = 0; i < mainArr.length; i++) {
+		mainArr[i].style.height = height + 'px';
+		mainArr[i].style.lineHeight = height + 'px';
+	}
+
 	document.getElementById('btn').addEventListener('click', function() {
 		document.getElementById('page1').style.transform = 'translateY(-9999px)';
 		document.getElementById('page2').style.display = 'block';
