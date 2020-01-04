@@ -62,27 +62,27 @@
 }
 
 .fuego:nth-child(1) {
-  -webkit-animation: fuego 2s 6.5s infinite;
+  -webkit-animation: fuego 2s 2s infinite;
   animation: fuego 2s 2s infinite;
 }
 
 .fuego:nth-child(2) {
-  -webkit-animation: fuego 1.5s 6.5s infinite;
+  -webkit-animation: fuego 1.5s 2s infinite;
   animation: fuego 1.5s 2s infinite;
 }
 
 .fuego:nth-child(3) {
-  -webkit-animation: fuego 1s 6.5s infinite;
+  -webkit-animation: fuego 1s 2s infinite;
   animation: fuego 1s 2s infinite;
 }
 
 .fuego:nth-child(4) {
-  -webkit-animation: fuego 0.5s 6.5s infinite;
+  -webkit-animation: fuego 0.5s 2s infinite;
   animation: fuego 0.5s 2s infinite;
 }
 
 .fuego:nth-child(5) {
-  -webkit-animation: fuego 0.2s 6.5s infinite;
+  -webkit-animation: fuego 0.2s 2s infinite;
   animation: fuego 0.2s 2s infinite;
 }
 
