@@ -46,9 +46,9 @@ var settings = {
   particles: {
     length:   750, // maximum amount of particles
     duration:   3, // particle duration in sec
-    velocity: 150, // particle velocity in pixels/sec
+    velocity: 200, // particle velocity in pixels/sec
     effect: -0.75, // play with this for a nice effect
-    size:      25, // particle size in pixels
+    size:      30, // particle size in pixels
   },
 };
 
@@ -198,7 +198,7 @@ var ParticlePool = (function() {
   function pointOnHeart(t) {
     return new Point(
       260 * Math.pow(Math.sin(t), 3),
-      210 * Math.cos(t) - 50 * Math.cos(2 * t) - 20 * Math.cos(3 * t) - 10 * Math.cos(4 * t) + 25
+      210 * Math.cos(t) - 95 * Math.cos(2 * t) - 40 * Math.cos(3 * t) - 10 * Math.cos(4 * t) + 25
     );
   }
   
